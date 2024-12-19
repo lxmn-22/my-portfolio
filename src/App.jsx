@@ -1,10 +1,13 @@
+import React from 'react'
+import Navbar from './components/navbar/Navbar'
+import Hero from './components/hero/Hero'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      My Portfolio
-    </>
+    <div>
+      <Navbar />
+      <Hero />
+    </div>
   )
 }
 
