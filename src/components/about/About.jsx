@@ -13,37 +13,68 @@ const About = () => {
                 <img className='w-80 mt-20 rounded-full border-2 boder-solid border-gray-600' src={profile_img} alt="profile-img" />
             </div>
 
-            <div className='flex flex-col gap-20'>
+            <div className='flex flex-col items-center gap-20'>
                 <div className='flex flex-col gap-5 text-xl font-base'>
                     <p><span className='bg-clip-text bg-gradient-to-b from-white to-blue-700 text-transparent'>👉🏼</span> I&apos;m an experienced MERN Stack Developer with skilled in building robust and scalable web applications.</p>
                     <p><span className='bg-clip-text bg-gradient-to-b from-white to-blue-700 text-transparent'>👉🏼</span> Creative Designer, technical expertise to create visually appealing and user-friendly interfaces.</p>
                     <p><span className='bg-clip-text bg-gradient-to-b from-white to-blue-700 text-transparent'>👉🏼</span> Passionate about developing efficient solutions, staying updated with industry trends and delivering high-quality software.</p>
                 </div>
 
-                <div className='flex gap-28'>
-                    <div className='flex flex-col gap-3'>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-tailwind text-transparent hover:scale-110 hover:border hover:border-tailwind hover:rounded hover:px-2'>Tailwind-CSS</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-react text-transparent hover:scale-110 hover:border hover:border-react hover:rounded hover:px-2'>ReactJS</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-js text-transparent hover:scale-110 hover:border hover:border-js hover:rounded hover:px-2'>JavaScript</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-ts text-transparent hover:scale-110 hover:border hover:border-ts hover:rounded hover:px-2'>TypeScript</p></div>
-                    </div>
-                    <div className='flex flex-col gap-3'>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-node text-transparent hover:scale-110 hover:border hover:border-node hover:rounded hover:px-2'>ExpressJS</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-node text-transparent hover:scale-110 hover:border hover:border-node hover:rounded hover:px-2'>NodeJS</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-white text-transparent hover:scale-110 hover:border hover:border-white hover:rounded hover:px-2'>NextJS</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-redux text-transparent hover:scale-110 hover:border hover:border-redux hover:rounded hover:px-2'>Redux</p></div>
-                    </div>
-                    <div className='flex flex-col gap-3'>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-mongo text-transparent hover:scale-110 hover:border hover:border-mongo hover:rounded hover:px-2'>MongoDB</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-mongoose text-transparent hover:scale-110 hover:border hover:border-mongoose hover:rounded hover:px-2'>Mongoose</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-postgreSQL text-transparent hover:scale-110 hover:border hover:border-postgreSQL hover:rounded hover:px-2'>PostgreSQL</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-git text-transparent hover:scale-110 hover:border hover:border-git hover:rounded hover:px-2'>Git & Github</p></div>
-                    </div>
-                    <div className='flex flex-col gap-3'>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-git text-transparent hover:scale-110 hover:border hover:border-git hover:rounded hover:px-2'>NPM</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-git text-transparent hover:scale-110 hover:border hover:border-git hover:rounded hover:px-2'>Postman</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-tailwind text-transparent hover:scale-110 hover:border hover:border-tailwind hover:rounded hover:px-2'>Docker</p></div>
-                        <div><p className='min-w-48 text-2xl font-medium bg-clip-text bg-white hover:bg-tailwind text-transparent hover:scale-110 hover:border hover:border-tailwind hover:rounded hover:px-2'>VS Code</p></div>
+                <div className='flex gap-20'>
+                    <div className='flex flex-col gap-4'>
+                        <div className='flex flex-row gap-14 mb-6'>
+                            <div className='hover:scale-150'>  
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain-wordmark.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                            </div>
+                            <div className='hover:scale-150'>   
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
+                            </div>
+                        </div>
+
+                        <div className='flex flex-row gap-14 mb-6'>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" />
+                            </div>
+                            <div className='hover:scale-150'>
+                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
