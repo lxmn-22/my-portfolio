@@ -82,11 +82,11 @@ const About = () => {
         <div className='flex w-1/2 justify-around mb-20'>
             <div className='flex flex-col items-center gap-2.5 hover:scale-110 transition-0.3s'>
                 <h1 className='text-5xl font-bold bg-clip-text bg-secondary text-transparent bg-gradient-to-b from-white to-blue-700'>500+</h1>
-                <p className='text-xl font-medium'>LEETCODE QUESTIONS</p>
+                <p className='text-xl font-medium'>LEETCODE QUESTIONS SOLVED</p>
             </div>
             
             <div className='flex flex-col items-center gap-2.5 hover:scale-110 transition-0.3s'>
-                <h1 className='text-5xl font-bold bg-clip-text bg-secondary text-transparent bg-gradient-to-b from-white to-blue-700'>5+</h1>
+                <h1 className='text-5xl font-bold bg-clip-text bg-secondary text-transparent bg-gradient-to-b from-white to-blue-700'>05+</h1>
                 <p className='text-xl font-medium'>PROJECTS COMPLETED</p>
             </div>
         </div>
