@@ -4,7 +4,7 @@ import arrow_icon from '../../assets/arrow_icon.svg'
 
 const Projects = () => {
   return (
-    <div id="projects" className='flex flex-col items-center justify-center gap-16'>
+    <div id="projects" className='flex flex-col items-center justify-center gap-12'>
         <div className='relative'>
             <h1 className='px-0 py-3 text-7xl font-semibold border-b'>My Projects</h1>
         </div>
@@ -15,7 +15,7 @@ const Projects = () => {
             })}
         </div>
 
-        <div className='flex gap-3 items-center rounded border-2 border-white text-base px-5 py-3 font-semibold mb-20 transition-0.4s cursor-pointer hover:gap-9 hover:transition-0.6s'>
+        <div className='flex gap-3 items-center rounded-full border-2 border-white text-base px-5 py-3 font-semibold mb-20 transition-0.4s cursor-pointer hover:gap-9 hover:transition-0.6s'>
             <p>Show More</p>
             <img src={arrow_icon} alt="arrow-icon" />
         </div>
