@@ -15,18 +15,12 @@ const Footer = () => {
                     <img src={user_icon} alt="user-icon" />
                     <input className='outline-none border-none bg-transparent text-[#a0a0a0] text-lg' type="email" placeholder='Enter your email' />
                 </div>
-                <div className='text-md px-6 py-2 rounded bg-primary cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300'>Subscribe</div>
+                <div className='text-md px-6 py-2 rounded-full bg-primary cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300'>Subscribe</div>
             </div>
         </div>
         <hr />
-        <div className='flex justify-between text-lg'>
-            <p>© 2024 Laxman Singh Koranga. All rights reserved.</p>
-
-            <div className='flex gap-14 mb-12'>
-                <p>Term of Service</p>
-                <p>Privacy Policy</p>
-                <p>Connect with me</p>
-            </div>
+        <div className='flex items-center text-lg mb-12'>
+            <p className=''>© 2024 Laxman Singh Koranga. All rights reserved.</p>
         </div>
     </div>
   )

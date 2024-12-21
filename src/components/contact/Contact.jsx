@@ -2,6 +2,9 @@ import React from 'react'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
+import linkedIn_icon from '../../assets/linkedin-box-fill.svg';
+import github_icon from '../../assets/github-fill.svg';
+import x_icon from '../../assets/twitter-x-fill.svg';
 
 const Contact = () => {
   return (
@@ -17,25 +20,38 @@ const Contact = () => {
 
                 <div className='flex flex-col gap-7 text-[#D8D8D8] text-xl'>
                     <div className='flex items-center gap-5'>
-                        <img src={mail_icon} alt="mail-icon" /><p>laxmankoranga03@gmail.com</p>
+                        <img className='transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-150 duration-300' src={mail_icon} alt="mail-icon" /><p>laxmankoranga03@gmail.com</p>
                     </div>
                     <div className='flex items-center gap-5'>
-                        <img src={call_icon} alt="call-icon" /><p>+91 9410996867</p>
+                        <img className='transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-150 duration-300' src={call_icon} alt="call-icon" /><p>+91 9410996867</p>
                     </div>
                     <div className='flex items-center gap-5'>
-                        <img src={location_icon} alt="location-icon" /><p>Uttarakhand, India</p>
+                        <img className='transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-150 duration-300' src={location_icon} alt="location-icon" /><p>Uttarakhand, India</p>
+                    </div>
+                    <div className='flex items-center gap-28 text-lg font-medium mb-20'>
+                    <div className='flex gap-4 mt-4'>
+                        <a href="https://www.linkedin.com/in/laxmankoranga03/" target='_blank' rel="noopener noreferrer">
+                            <img className='w-9 h-8 cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-150 duration-300' src={linkedIn_icon} alt="linkedIn-icon" />
+                        </a>
+                        <a href="https://github.com/lxmn-22" target='_blank' rel="noopener noreferrer">
+                            <img className='w-9 h-8 cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-150 duration-300' src={github_icon} alt="github-icon" />
+                        </a>
+                        <a href="https://x.com/lxmn22nov" target='_blank' rel="noopener noreferrer">
+                            <img className='w-9 h-8 cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-150 duration-300' src={x_icon} alt="x_icon" />
+                        </a>
+                    </div>
                     </div>
                 </div>
             </div>
 
             <form className='flex flex-col items-start gap-7'>
-                <label className='text-[#D8D8D8] text-xl font-medium' htmlFor="">Your Name</label>
+                <label className='text-[#D8D8D8] text-xl font-medium' htmlFor="">Name</label>
                 <input className='border-none w-[400px] h-[50px] pl-5 rounded bg-[#32323c] text-[#A0A0A0] text-l' type="text" placeholder='Enter your name' name='name' />
-                <label className='text-[#D8D8D8] text-xl font-medium' htmlFor="">Your Email</label>
+                <label className='text-[#D8D8D8] text-xl font-medium' htmlFor="">Email</label>
                 <input className='border-none w-[400px] h-[50px] pl-5 rounded bg-[#32323c] text-[#A0A0A0] text-l' type="email" placeholder='Enter your email' name='email' />
                 <label className='text-[#D8D8D8] text-xl font-medium' htmlFor="">Write your message here</label>
                 <textarea className='border-none w-[400px] h-[170px] p-5 rounded bg-[#32323c] text-[#A0A0A0] text-l' name="message" rows="12" placeholder='Enter your message'></textarea>
-                <button className='border-none text-white rounded bg-primary text-base px-6 py-1 mb-12 cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300' type=''>Submit</button>
+                <button className='border-none text-white rounded-3xl bg-primary text-md px-6 py-2 mb-12 cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300' type=''>Submit</button>
             </form>
         </div>
     </div>
