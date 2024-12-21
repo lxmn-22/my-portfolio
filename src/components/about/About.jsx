@@ -3,7 +3,7 @@ import profile_img from '../../assets/profile_pic.jpeg'
 
 const About = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-12 mx-20 my-36'>
+    <div id="about" className='flex flex-col items-center justify-center gap-12 mx-20 my-36'>
         <div className='relative'>
             <h1 className='px-0 py-3 text-7xl font-semibold border-b'>About me</h1>
         </div>

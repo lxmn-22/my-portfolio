@@ -4,7 +4,7 @@ import arrow_icon from '../../assets/arrow_icon.svg'
 
 const Services = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-12 mx-20 my-36'>
+    <div id="services" className='flex flex-col items-center justify-center gap-12 mx-20 my-36'>
         <div className='relative'>
             <h1 className='px-0 py-3 text-7xl font-semibold border-b'>My Services</h1>
         </div>

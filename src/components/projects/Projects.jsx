@@ -4,7 +4,7 @@ import arrow_icon from '../../assets/arrow_icon.svg'
 
 const Projects = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-16'>
+    <div id="projects" className='flex flex-col items-center justify-center gap-16'>
         <div className='relative'>
             <h1 className='px-0 py-3 text-7xl font-semibold border-b'>My Projects</h1>
         </div>
