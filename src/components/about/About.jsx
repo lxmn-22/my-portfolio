@@ -10,7 +10,7 @@ const About = () => {
 
         <div className='flex gap-8'>
             <div>
-                <img className='w-80 mt-20 rounded-full border-2 boder-solid border-gray-600' src={profile_img} alt="profile-img" />
+                <img className='w-80 mt-20 rounded-full border-2 boder-solid border-gray-600' title='Profile-Pic' src={profile_img} alt="profile-img" />
             </div>
 
             <div className='flex flex-col items-center gap-20'>
@@ -24,55 +24,55 @@ const About = () => {
                     <div className='flex flex-col gap-4'>
                         <div className='flex flex-row gap-14 mb-6'>
                             <div className='hover:scale-150'>  
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='Java' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain-wordmark.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                                <img className='w-12 rounded-md' title='Tailwind-CSS' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='ReactJS' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+                                <img className='w-12 rounded-md' title='JavaScript' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                                <img className='w-12 rounded-md' title='TypeScript' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
                             </div>
                             <div className='hover:scale-150'>   
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                                <img className='w-12 rounded-md' title='NodeJS' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+                                <img className='w-12 rounded-md' title='NextJS' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
+                                <img className='w-12 rounded-md' title='Redux' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
                             </div>
                         </div>
 
                         <div className='flex flex-row gap-14 mb-6'>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='MongoDB' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='Mongoose' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='PostgreSQL' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='Git' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='NPM' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                                <img className='w-12 rounded-md' title='Postman' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='Docker' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg" />
                             </div>
                             <div className='hover:scale-150'>
-                                <img className='w-12 rounded-md' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+                                <img className='w-12 rounded-md' title='VS Code' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
                             </div>
                         </div>
                     </div>

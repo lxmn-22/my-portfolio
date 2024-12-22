@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
   return (
-    <div className='flex items-center justify-between mx-44 my-6'>
+    <div className='flex static items-center justify-between sticky top-3 mx-44 my-6'>
         <img className='w-12 rounded-full hover:animate-spin' src={code} alt="logo" />
 
         <ul className='flex items-center list-none gap-12 text-xl'>
