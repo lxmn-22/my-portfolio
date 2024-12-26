@@ -1,3 +1,3 @@
 # My Portfolio
 
-![Screenshot 2024-12-22 at 6 53 19 AM](https://github.com/user-attachments/assets/ed6300ed-c72f-4d67-bf99-543207ae54c7)
+![Screenshot 2024-12-27 at 12 46 56 AM](https://github.com/user-attachments/assets/8bd8dbec-74ae-4658-bea9-f260ad1806f1)
