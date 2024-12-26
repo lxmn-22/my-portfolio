@@ -4,14 +4,14 @@ import user_icon from '../../assets/user_icon.svg'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col mx-20 my-44 gap-8'>
+    <div className='flex flex-col mx-20 mt-28 sm:my-44 gap-8'>
         <div className='flex justify-between'>
             <div>
-                <img className='w-16 rounded-full hover:animate-spin' src={code} alt="footer-logo" />
+                <img className='w-12 sm:w-16 rounded-full hover:animate-spin' src={code} alt="footer-logo" />
             </div>
 
-            <div className='flex items-center gap-3'>
-                <div className='flex gap-2 px-8 py-2 rounded-full bg-[#32323B] pr-9 hover:border-2 hover:border-white'>
+            <div className='flex items-center gap-2 sm:gap-3'>
+                <div className='flex gap-2 px-5 sm:px-8 py-2 rounded-full bg-[#32323B] pr-1 sm:pr-9 hover:border-2 hover:border-white'>
                     <img src={user_icon} alt="user-icon" />
                     <input className='outline-none border-none bg-transparent text-[#a0a0a0] text-lg' type="email" placeholder='Enter your email' />
                 </div>
@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
         </div>
         <hr />
-        <div className='flex items-center text-lg mb-12'>
+        <div className='flex items-center justify-center text-lg mb-12'>
             <p className=''>© 2024 Laxman Singh Koranga. All rights reserved.</p>
         </div>
     </div>
