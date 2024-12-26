@@ -3,7 +3,7 @@ const Services_Data = [
     s_no: "01",
     s_name: "Web design",
     s_desc:
-      "Web design involves crafting intuitive and visually engaging interfaces that balance aesthetics and functionality for seamless user experiences.",
+      "Web design involves crafting intuitive & visually engaging interfaces that balance aesthetics for seamless user experience.",
   },
   {
     s_no: "02",
