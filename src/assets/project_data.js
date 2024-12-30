@@ -8,12 +8,12 @@ import project6_img from "../assets/project_6.svg";
 const project_data = [
   {
     p_no: 1,
-    p_name: "Web design",
+    p_name: "My Portfolio",
     p_img: project1_img,
   },
   {
     p_no: 2,
-    p_name: "Web design",
+    p_name: "DocTalk",
     p_img: project2_img,
   },
   {
