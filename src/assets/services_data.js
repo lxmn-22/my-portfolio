@@ -23,6 +23,18 @@ const Services_Data = [
     s_desc:
       "I develop innovative and user-friendly apps that deliver seamless functionality and engaging experiences.",
   },
+  {
+    s_no: "05",
+    s_name: "Maintenance & Support",
+    s_desc:
+      "Improve existing code for readability and efficiency, assist with resolving technical issues faced by the business or users.",
+  },
+  {
+    s_no: "06",
+    s_name: "Testing & Quality",
+    s_desc:
+      "Writes tests to ensure individual components work as intended, validate the interaction between different components, review peers code.",
+  },
 ];
 
 export default Services_Data;

@@ -23,7 +23,7 @@ const Hero = () => {
                 <img className='w-12 sm:w-10 h-11 sm:h-10 cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-150 duration-200' title="X" src={x_icon} alt="x_icon" />
               </a>
             </div>
-            <div className='px-12 sm:px-10 py-2 rounded-full border-solid border-2 border-white cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300'>My Resume</div>
+            <div className='px-12 sm:px-9 py-2 rounded-full border-2 border-none bg-primary cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300'>My Resume</div>
         </div>
     </div>
   )
