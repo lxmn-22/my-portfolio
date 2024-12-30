@@ -11,7 +11,7 @@ const Projects = () => {
 
         <div className='flex flex-wrap justify-between gap-6 px-4 sm:px-28 mb-4'>
             {project_data.map((project, index)=> {
-                return <img className='box-border w-[150px] sm:w-[419px] h-[100px] sm:h-[280px] transition-0.3s cursor-pointer hover:rounded-xl hover:border-2 hover:border-white transition-0.4s hover:scale-110' key={index} src={project.p_img} alt="project-image" />
+                return <img className='box-border w-[150px] sm:w-[419px] h-[100px] sm:h-[280px] transition-0.3s cursor-pointer hover:rounded-xl hover:border-2 transition-0.4s' key={index} src={project.p_img} alt="project-image" />
             })}
         </div>
 
