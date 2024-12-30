@@ -1,6 +1,7 @@
 import React from 'react'
 import project_data from '../../assets/project_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
+import Card from './Card'
 
 const Projects = () => {
   return (
@@ -11,7 +12,11 @@ const Projects = () => {
 
         <div className='flex flex-wrap justify-between gap-6 px-4 sm:px-28 mb-4'>
             {project_data.map((project, index)=> {
-                return <img className='box-border w-[150px] sm:w-[419px] h-[100px] sm:h-[280px] transition-0.3s cursor-pointer hover:rounded-xl hover:border-2 transition-0.4s' key={index} src={project.p_img} alt="project-image" />
+                return <Card 
+                    key={index}
+                    imageUrl={project.p_img}
+                    cardName={project.p_name}
+                />    
             })}
         </div>
 

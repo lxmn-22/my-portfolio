@@ -13,9 +13,9 @@ const Services_Data = [
   },
   {
     s_no: "03",
-    s_name: "App design",
+    s_name: "Software Development",
     s_desc:
-      "I create intuitive and visually engaging app designs focused on enhancing user experience and functionality.",
+      "Writing efficient, maintainable, bug-free code. Build prototypes to test, validate ideas quickly, implement new features.",
   },
   {
     s_no: "04",
@@ -33,7 +33,7 @@ const Services_Data = [
     s_no: "06",
     s_name: "Testing & Quality",
     s_desc:
-      "Writes tests to ensure individual components work as intended, validate the interaction between different components, review peers code.",
+      "Writes tests to ensure individual components work as intended, validate the interaction between different components.",
   },
 ];
 
