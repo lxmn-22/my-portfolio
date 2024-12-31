@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({ imageUrl, cardName }) => {
   return (
-    <div className="relative w-[150px] h-[100px] sm:w-[419px] sm:h-[280px] overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+    <div className="relative w-[150px] h-[100px] sm:w-[419px] sm:h-[280px] overflow-hidden rounded-lg shadow-lg group cursor-pointer hover:border-2 hover:border-slate-800">
       {/* Image */}
       <img
         src={imageUrl}
