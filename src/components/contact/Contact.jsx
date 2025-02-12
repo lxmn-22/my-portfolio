@@ -139,7 +139,7 @@ const Contact = () => {
 								Name
 							</label>
 							<input
-								className="border-none w-[400px] h-[50px] pl-5 rounded bg-[#32323c] text-[#A0A0A0] text-l"
+								className="border-none w-[400px] h-[50px] pl-5 rounded bg-[#32323c] text-[#A0A0A0] text-l focus:outline-none"
 								type="text"
 								placeholder="Enter your name"
 								name="name"
@@ -151,7 +151,7 @@ const Contact = () => {
 								Email
 							</label>
 							<input
-								className="border-none w-[400px] h-[50px] pl-5 rounded bg-[#32323c] text-[#A0A0A0] text-l"
+								className="border-none w-[400px] h-[50px] pl-5 rounded bg-[#32323c] text-[#A0A0A0] text-l focus:outline-none"
 								type="email"
 								placeholder="Enter your email"
 								name="email"
@@ -163,7 +163,7 @@ const Contact = () => {
 								Write your message here
 							</label>
 							<textarea
-								className="border-none w-[400px] h-[170px] p-5 rounded bg-[#32323c] text-[#A0A0A0] text-l"
+								className="border-none w-[400px] h-[170px] p-5 rounded bg-[#32323c] text-[#A0A0A0] text-l focus:outline-none resize-none"
 								name="message"
 								rows="12"
 								placeholder="Enter your message"
