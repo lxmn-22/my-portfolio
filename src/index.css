@@ -3,13 +3,40 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    height: 100vh;
-    background: #161513;
-    color: white;
-    font-family: 'outfit';
+	height: 100vh;
+	background: #161513;
+	color: white;
+	font-family: "outfit";
+}
+
+@layer utilities {
+	@keyframes blink {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+	.animate-blink {
+		animation: blink 0.8s step-end infinite;
+	}
+
+	@keyframes loading {
+		0% {
+			transform: translateX();
+		}
+		100% {
+			transform: translateX(250%);
+		}
+	}
+	.animate-loading-bar {
+		animation: loading 0.9s ease infinite;
+	}
 }
