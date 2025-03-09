@@ -12,7 +12,7 @@ const Projects = () => {
 			</div>
 
 			{/* Projects Grid */}
-			<div className="grid grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-10 px-4 sm:px-14 mb-12">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 px-4 sm:px-14 mb-12">
 				{project_data.map((project, index) => (
 					<Card
 						key={index}
