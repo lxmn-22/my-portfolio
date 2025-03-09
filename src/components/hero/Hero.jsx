@@ -5,7 +5,7 @@ import x_icon from "../../assets/twitter-x-fill.svg";
 
 const Hero = () => {
 	return (
-		<div className="flex flex-col items-center gap-3 lg:gap-4 mb-12">
+		<div className="xl:h-screen flex flex-col items-center gap-3 lg:gap-4 mb-12">
 			{/* Profile Image */}
 			<img
 				className="w-[330px] sm:w-96 sm:mt-3 xl:mt-12 rounded-full hover:animate-bounce duration-300 ease-linear transition-all"
@@ -19,7 +19,7 @@ const Hero = () => {
 				</span>
 				<br />A Software Developer
 			</h1>
-			<p className="w-auto text-center text-[19px] sm:text-2xl leading-[25px] sm:leading-10">
+			<p className="w-auto text-center text-[19px] sm:text-2xl leading-[25px] sm:leading-10 font-extralight">
 				I&apos;m proficient in MERN Stack Developement.
 			</p>
 
@@ -65,9 +65,13 @@ const Hero = () => {
 				</div>
 
 				{/* Resume Button */}
-				<div className="px-12 sm:px-9 md:px-12 py-2 rounded-full border-2 border-none bg-primary cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300">
+				<a
+					href=""
+					download
+					className="px-12 sm:px-9 md:px-12 py-2 tracking-wide rounded-full border-2 border-none bg-primary cursor-pointer transition ease-in-out delay-10 hover:-translate-y-1 hover:scale-110 duration-300"
+				>
 					My Resume
-				</div>
+				</a>
 			</div>
 		</div>
 	);
