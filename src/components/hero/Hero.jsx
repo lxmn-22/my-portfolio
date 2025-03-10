@@ -5,7 +5,10 @@ import x_icon from "../../assets/twitter-x-fill.svg";
 
 const Hero = () => {
 	return (
-		<div className="xl:h-screen flex flex-col items-center gap-3 lg:gap-4 mb-12">
+		<section
+			id="home"
+			className="flex flex-col items-center gap-3 lg:gap-1 lg:py-10 mx-4 sm:mx-20 my-12 xl:my-6"
+		>
 			{/* Profile Image */}
 			<img
 				className="w-[330px] sm:w-96 sm:mt-3 xl:mt-12 rounded-full hover:animate-bounce duration-300 ease-linear transition-all"
@@ -24,7 +27,7 @@ const Hero = () => {
 			</p>
 
 			{/* Social media handle Links */}
-			<div className="flex flex-col sm:flex-row items-center gap-9 sm:gap-24 text-lg font-medium mt-5 sm:mt-3 mb-4">
+			<div className="flex flex-col sm:flex-row items-center gap-9 sm:gap-24 text-lg font-medium mt-5 sm:mt-3">
 				<div className="flex gap-7 sm:gap-6">
 					<a
 						href="https://www.linkedin.com/in/laxmankoranga03/"
@@ -73,7 +76,7 @@ const Hero = () => {
 					My Resume
 				</a>
 			</div>
-		</div>
+		</section>
 	);
 };
 
