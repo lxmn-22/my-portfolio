@@ -6,7 +6,10 @@ const About = () => {
 	const [activeTab, setActiveTab] = useState("about");
 
 	return (
-		<section id="about" className="py-16 md:py-10">
+		<section
+			id="about"
+			className="flex flex-col items-center gap-3 lg:gap-4 lg:py-12 mx-4 sm:mx-20 my-12 xl:my-20"
+		>
 			<div className="container mx-auto px-4 md:px-6 max-w-7xl">
 				<div className="flex flex-col items-center text-center gap-4 mb-12">
 					<h1 className="py-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold border-b tracking-tight shadow-lg">
@@ -163,14 +166,16 @@ const About = () => {
 													Applications - MCA
 												</h4>
 												<p className="text-gray-300">
-													DIT University, 2024 - 26
+													Uttaranchal University,
+													Present
 												</p>
 												<p className="text-justify mt-2 font-extralight">
 													Coursework included Data
-													Structures & Algorithms,
-													COA, Computer Networks,
-													Database Systems and
-													Software Engineering.
+													Introduction to Data
+													Science, Python Programming,
+													Artificial Intelligence,
+													Financial Accounting and
+													Advanced Web Applications.
 												</p>
 											</div>
 										</div>

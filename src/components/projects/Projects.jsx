@@ -3,7 +3,10 @@ import Card from "./Card";
 
 const Projects = () => {
 	return (
-		<div id="projects" className="flex flex-col items-center gap-12 mx-8">
+		<section
+			id="projects"
+			className="flex flex-col items-center gap-12 mx-8 sm:mx-20 my-12 xl:my-20"
+		>
 			{/* Title Section */}
 			<div className="relative">
 				<h1 className="px-0 py-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold border-b">
@@ -21,7 +24,7 @@ const Projects = () => {
 					/>
 				))}
 			</div>
-		</div>
+		</section>
 	);
 };
 
