@@ -19,8 +19,9 @@ const Projects = () => {
 				{project_data.map((project, index) => (
 					<Card
 						key={index}
-						imageUrl={project.p_img}
+						image={project.p_img}
 						cardName={project.p_name}
+						link={project.p_link}
 					/>
 				))}
 			</div>
