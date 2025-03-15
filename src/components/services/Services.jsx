@@ -2,7 +2,7 @@ import Services_Data from "../../assets/services_data";
 
 const Services = () => {
 	return (
-		<div
+		<section
 			id="services"
 			className="flex flex-col items-center justify-center gap-12 mx-4 sm:mx-20 my-12 xl:my-20"
 		>
@@ -32,7 +32,7 @@ const Services = () => {
 					</div>
 				))}
 			</div>
-		</div>
+		</section>
 	);
 };
 
