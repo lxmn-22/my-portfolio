@@ -5,10 +5,10 @@ const Projects = () => {
 	return (
 		<section
 			id="projects"
-			className="flex flex-col items-center gap-12 mx-8 sm:mx-20 my-12 xl:my-20"
+			className="flex flex-col items-center gap-3 lg:gap-4 lg:py-12 mx-4 sm:mx-20 my-12 xl:my-20"
 		>
 			{/* Title Section */}
-			<div className="relative">
+			<div className="">
 				<h1 className="px-0 py-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold border-b">
 					My Projects
 				</h1>

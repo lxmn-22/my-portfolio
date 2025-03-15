@@ -35,7 +35,7 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="flex flex-col items-start sm:items-center justify-center gap-6 mx-4 sm:mx-8 md:mx-20 mt-24 my-12 xl:my-20"
+			className="flex flex-col items-start sm:items-center justify-center gap-3 lg:gap-6 lg:py-12 mx-4 sm:mx-20 my-12 xl:my-20"
 		>
 			{/* Title Section */}
 			<div className="relative">
