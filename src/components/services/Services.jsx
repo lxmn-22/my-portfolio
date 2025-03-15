@@ -4,10 +4,10 @@ const Services = () => {
 	return (
 		<section
 			id="services"
-			className="flex flex-col items-center justify-center gap-12 mx-4 sm:mx-20 my-12 xl:my-20"
+			className="flex flex-col items-center gap-3 lg:gap-4 lg:py-12 mx-4 sm:mx-20 my-12 xl:my-20"
 		>
 			{/* Section Title */}
-			<div className="relative">
+			<div className="">
 				<h1 className="px-0 py-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold border-b">
 					My Services
 				</h1>

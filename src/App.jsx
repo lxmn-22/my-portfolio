@@ -13,16 +13,19 @@ const App = () => {
 
 	return (
 		<div>
-			{!isLoaded && (
+			{!isLoaded ? (
 				<LoadingScreen onComplete={() => setIsLoaded(true)} />
+			) : (
+				<>
+					<Navbar />
+					<Hero />
+					<About />
+					<Services />
+					<Projects />
+					<Contact />
+					<Footer />
+				</>
 			)}
-			<Navbar />
-			<Hero />
-			<About />
-			<Services />
-			<Projects />
-			<Contact />
-			<Footer />
 		</div>
 	);
 };

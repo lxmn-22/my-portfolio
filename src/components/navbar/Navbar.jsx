@@ -24,34 +24,41 @@ const Navbar = () => {
 
 	// Scroll Detection Logic:
 	useEffect(() => {
+		let timeout;
+
 		// function gets triggered whenever the user scrolls:
 		const handleScroll = () => {
-			let currentSection = "home";
+			// Prevent multiple rapid updates:
+			clearTimeout(timeout);
 
-			// detecting the scroll position:
-			const scrollPosition = window.scrollY + window.innerHeight / 2;
+			timeout = setTimeout(() => {
+				let currentSection = "home";
 
-			// looping through sections:
-			sections.forEach((section) => {
-				// finds actual section in the DOM:
-				const element = document.getElementById(section);
+				// detecting the scroll position:
+				const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-				if (element) {
-					const { top, bottom } = element.getBoundingClientRect();
-					const elementTop = window.scrollY + top;
-					const elementBottom = window.scrollY + bottom;
+				// looping through sections:
+				sections.forEach((section) => {
+					// finds actual section in the DOM:
+					const element = document.getElementById(section);
 
-					// check if section is in view:
-					if (
-						scrollPosition >= elementTop &&
-						scrollPosition <= elementBottom
-					) {
-						currentSection = section;
+					if (element) {
+						const { top, bottom } = element.getBoundingClientRect();
+						const elementTop = window.scrollY + top;
+						const elementBottom = window.scrollY + bottom;
+
+						// check if section is in view:
+						if (
+							scrollPosition >= elementTop &&
+							scrollPosition <= elementBottom
+						) {
+							currentSection = section;
+						}
 					}
-				}
-			});
-			// update active menu:
-			setMenu(currentSection);
+				});
+				// update active menu:
+				setMenu(currentSection);
+			}, 100); // small delay to prevent flickering:
 		};
 		window.addEventListener("scroll", handleScroll);
 
@@ -60,7 +67,7 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<section className="flex sticky items-center justify-between top-2 mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32 my-6 sm:my-2 px-4 sm:px-6 md:px-8 lg:px-10">
+		<section className="fixed top-0 left-0 w-full xl:bg-black xl:bg-opacity-80 xl:backdrop-blur-md z-50 flex items-center justify-between px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-4">
 			{/* Logo */}
 			<img
 				className="w-12 sm:w-14 rounded-full hover:animate-spin"
