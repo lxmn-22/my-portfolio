@@ -1,23 +1,66 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import code from "../../assets/code.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import menu_open from "../../assets/menu_open.svg";
 import menu_close from "../../assets/menu_close.svg";
 
+const sections = ["home", "about", "services", "projects", "contact"];
+
 const Navbar = () => {
 	const [menu, setMenu] = useState("home");
-	const menuRef = useRef();
+	const menuRef = useRef(null);
 
 	const openMenu = () => {
-		menuRef.current.style.right = "0";
+		if (menuRef.current) {
+			menuRef.current.style.right = "0";
+		}
 	};
 
 	const closeMenu = () => {
-		menuRef.current.style.right = "-350px";
+		if (menuRef.current) {
+			menuRef.current.style.right = "-350px";
+		}
 	};
 
+	// Scroll Detection Logic:
+	useEffect(() => {
+		// function gets triggered whenever the user scrolls:
+		const handleScroll = () => {
+			let currentSection = "home";
+
+			// detecting the scroll position:
+			const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+			// looping through sections:
+			sections.forEach((section) => {
+				// finds actual section in the DOM:
+				const element = document.getElementById(section);
+
+				if (element) {
+					const { top, bottom } = element.getBoundingClientRect();
+					const elementTop = window.scrollY + top;
+					const elementBottom = window.scrollY + bottom;
+
+					// check if section is in view:
+					if (
+						scrollPosition >= elementTop &&
+						scrollPosition <= elementBottom
+					) {
+						currentSection = section;
+					}
+				}
+			});
+			// update active menu:
+			setMenu(currentSection);
+		};
+		window.addEventListener("scroll", handleScroll);
+
+		// cleaning up: removing event listener
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
 	return (
-		<div className="flex sticky items-center justify-between top-2 mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32 my-6 sm:my-2 px-4 sm:px-6 md:px-8 lg:px-10">
+		<section className="flex sticky items-center justify-between top-2 mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32 my-6 sm:my-2 px-4 sm:px-6 md:px-8 lg:px-10">
 			{/* Logo */}
 			<img
 				className="w-12 sm:w-14 rounded-full hover:animate-spin"
@@ -81,7 +124,7 @@ const Navbar = () => {
 					Connect With Me
 				</AnchorLink>
 			</div>
-		</div>
+		</section>
 	);
 };
 

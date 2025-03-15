@@ -33,7 +33,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div
+		<section
 			id="contact"
 			className="flex flex-col items-start sm:items-center justify-center gap-6 mx-4 sm:mx-8 md:mx-20 mt-24 my-12 xl:my-20"
 		>
@@ -182,7 +182,7 @@ const Contact = () => {
 					</form>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
